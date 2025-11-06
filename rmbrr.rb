@@ -11,16 +11,16 @@ class Rmbrr < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-macos-aarch64"
-      sha256 "ec70753ff426038aeb34b2b45c53eefec04a069dc82b0e5404d3cf7027c23636"
+      sha256 "9f38eb170250901a468bb441d7ae1b8afc651e6ff3c1b04eaf4d0681490e54e2"
     else
       url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-macos-x86_64"
-      sha256 "e50771b723a98cfed1d469fa2aaac724c3f38a337e309c6893d626b1836258e1"
+      sha256 "d6a0d649f681ee96ab217ba5a4907c16a10f3162dab5076a8d394f3796ea1eb0"
     end
   end
 
   on_linux do
     url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-linux-x86_64"
-    sha256 "e50771b723a98cfed1d469fa2aaac724c3f38a337e309c6893d626b1836258e1"
+    sha256 "d6a0d649f681ee96ab217ba5a4907c16a10f3162dab5076a8d394f3796ea1eb0"
   end
 
   def install
