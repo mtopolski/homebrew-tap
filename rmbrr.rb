@@ -5,22 +5,22 @@
 class Rmbrr < Formula
   desc "Fast parallel directory deletion with cross-platform support"
   homepage "https://github.com/mtopolski/rmbrr"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT OR Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-macos-aarch64"
-      sha256 "02fe5a375983569df0b263583abfca86589032b1d46e9c7cd8f14c221cd142b1"
+      sha256 "e57bee74014aa7ab99b8021f1162c7dbd71f8e777c48c98bdde122367d487a27"
     else
       url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-macos-x86_64"
-      sha256 "23a90009fe205e2667cd06cda75929999adbebe4b1167658667788c21358a937"
+      sha256 "a0f37d9ac6db406b29162bb781148e7d41e3d6d387863dd368799913239a9bd1"
     end
   end
 
   on_linux do
     url "https://github.com/mtopolski/rmbrr/releases/download/v#{version}/rmbrr-linux-x86_64"
-    sha256 "23a90009fe205e2667cd06cda75929999adbebe4b1167658667788c21358a937"
+    sha256 "a0f37d9ac6db406b29162bb781148e7d41e3d6d387863dd368799913239a9bd1"
   end
 
   def install
